@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Protofolio Home Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper ">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="brand">
+                        HTML & CSS
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+
+                <div class="protfolio-items-wrapper">
+
+                    <div class="protfolio-item-wrapper">
+
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_1.jpg);"></div>
+                            <div class="img-text-wrapper">                     
+                                <div class="logo-wrapper">
+                                    <img src="Images/Logo/Logo_1.png">
+                                </div>
+                                <div class="Subtitle-wrapper"> This is a sample website developed using Html and CSS.</div>
+                            </div>
+                        
+                    </div>
+
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_2.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_2.png">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url('Images/Puppy_Pic_3.jpg');"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_3.jpg">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_4.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_4.png">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_5.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_5.jpg">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_6.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_6.png">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_7.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_7.png">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_8.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_8.jpg">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protfolio-item-wrapper">
+                        <div class="protfolio-img-background" style="background-image: url(Images/Puppy_Pic_9.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="Images/Logo/Logo_9.jpg">
+                            </div>
+                            <div class="Subtitle-wrapper">
+                                This is a sample website developed using Html and CSS.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const protfolioItems = document.querySelectorAll('.protfolio-item-wrapper')
+        protfolioItems.forEach(protfolioItem => {
+            protfolioItem.addEventListener('mouseover', () => {
+                protfolioItem.childNodes[1].classList.add('img-darken');
+            })
+            protfolioItem.addEventListener('mouseout',() => {
+                protfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+</html>
